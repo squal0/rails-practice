@@ -36,9 +36,16 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    ansi (1.5.0)
     arel (6.0.3)
+    autoprefixer-rails (6.0.3)
+      execjs
+      json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.5.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.3.0)
     builder (3.2.2)
     byebug (6.0.2)
     coffee-rails (4.1.0)
@@ -69,6 +76,11 @@ GEM
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.1)
+    minitest-reporters (1.1.4)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -107,6 +119,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+    ruby-progressbar (1.7.5)
     sass (3.4.19)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -145,13 +158,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (= 3.3.5.1)
   byebug (= 6.0.2)
   coffee-rails (= 4.1.0)
   jbuilder (= 2.3.2)
   jquery-rails (= 4.0.5)
+  minitest
+  minitest-reporters (= 1.1.4)
   pg (= 0.18.3)
   rails (= 4.2.4)
   rails_12factor (= 0.0.3)
+  rake (= 10.4.2)
   sass-rails (= 5.0.4)
   sdoc (= 0.4.1)
   spring (= 1.4.0)
@@ -159,3 +176,6 @@ DEPENDENCIES
   turbolinks (= 2.5.3)
   uglifier (= 2.7.2)
   web-console (= 2.2.1)
+
+BUNDLED WITH
+   1.10.6

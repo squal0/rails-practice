@@ -178,6 +178,3 @@ DEPENDENCIES
   turbolinks (= 2.5.3)
   uglifier (= 2.7.2)
   web-console (= 2.2.1)
-
-BUNDLED WITH
-   1.10.6

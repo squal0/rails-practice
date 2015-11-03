@@ -1,7 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 #empty
-Kurosaki:
+kurosaki:
  name: Kurosaki Ichigo
  email: ichigo@zangetsu.com
  password_digest: <%= User.digest('bleach') %>
+ admin: true
+
+kendrick:
+ name: Kendrick Jones
+ email: jones@rocnation.com
+ password_digest: <%= User.digest('kingkunta') %>
+
+reina:
+ name: Reina Smith
+ email: rsmith@gmail.com
+ password_digest: <%= User.digest('kingkunta') %>
+
+brandish:
+ name: Lady Brandish
+ email: mass@alternate.ft
+ password_digest: <%= User.digest('kingkunta') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+ name: <%= "User #{n}" %>
+ email: <%= "user-#{n}@example.com" %>
+ password_digest: <%= User.digest('kingkunta') %>
+<% end %>
+
